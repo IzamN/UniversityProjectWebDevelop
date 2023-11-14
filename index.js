@@ -14,8 +14,8 @@ $(window).on('load', function(){
 
 
 $(document).ready(function(){
-    $('.header__burger').click(function(event){
-        $('.header__burger,.navigation-list').toggleClass('active');
+    $('.navigate__burger').click(function(event){
+        $('.navigate__burger,.navigate__menu').toggleClass('active');
         $('body').toggleClass('lock');
     });
 });
