@@ -683,7 +683,7 @@ margin-bottom: 30px;
   }
 
 }
-<<<<<<< HEAD
+
 /*------------------------------------------REVIEWS-----------------------------------------------------*/
 .reviews{
   margin-bottom: 90px;
@@ -929,14 +929,6 @@ margin-bottom: 100px;
   text-decoration: none;
 }
 
-=======
-
-
-
-
-
-
-
 /* -----------------------NAVIGATE --------------*/
 .navigate {
   font-weight: 500;
@@ -1106,7 +1098,7 @@ body.lock{
   top:0;
 }
 
-@media screen and (min-width:800px) {  
+@media screen and (min-width:800px) {
     .navigate__burger {
         display: none;
     }
@@ -1164,9 +1156,43 @@ body.lock{
       max-height: 150px;
     }
   }
-  
-  
+/*--------------------------------------ClientsSliders---------------------------------------*/
 
+.ClientsSliders_heading {
+  width: 100%;
+  margin-bottom: 100px;
+  text-align: left;
+}
+@media screen and (min-width: 800px){
+  .ClientsSliders_heading {
+    width: 100%;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
+.ClientsSliders_text {
+  margin-top: 10px;
+  color:#202932;
+  padding-left: 270px;
+  padding-right: 270px;
+}
+.cslider img {
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
 
-  
->>>>>>> a7351b1b6c9112ed94ce62366db5b5ac9e45d04c
+.cslider {
+  padding: 5px;
+}
+
+.cslider div {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#Cslider2.cslider {
+  transform: translateX(50%);
+}
