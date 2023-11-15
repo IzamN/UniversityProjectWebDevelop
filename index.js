@@ -19,6 +19,26 @@ $(document).ready(function(){
         $('body').toggleClass('lock');
     });
 });
+/*-------------------Slider Reviews ------------------------ */
+$(document).ready(function () {
+    $(".SliderR").slick({
+        infinite: true,
+        speed: 300,
+        prevArrow: $("#review-prev"),
+        nextArrow: $("#review-next"),
+        fade: true,
+        swipe: false,
+        draggable: false,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
 
 
-
+$(".SliderR").on(
+    "afterChange",
+    function (ignore, slick, currentSlide) {
+        console.log(slick);
+        $("#review-number").text("0" + (currentSlide + 1));
+    }
+);
+});
