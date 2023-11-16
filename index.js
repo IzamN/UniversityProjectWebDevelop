@@ -1,3 +1,46 @@
+$(window).on('load', function(){
+    $('#header').vide('./video/video', {
+        bgColor: '#fff'
+    })
+
+    const links= document.querySelectorAll('.navigation-list a');
+    links.forEach(function(item){
+        item.addEventListener('click', function(e){
+            links.forEach(function(item){item.classList.remove('active')})
+            e.target.classList.add("active")
+    })
+})
+})
+
+
+$(document).ready(function(){
+    $('.navigate__burger').click(function(event){
+        $('.navigate__burger,.navigate__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+    const btnsNovisible=document.querySelectorAll('.novisible');
+    const btn=document.querySelector('.btn-team')
+    btn.addEventListener('click', function(e){
+        e.preventDefault(); 
+        if (btn.innerText==='Вся команда') {
+            btn.innerText="Часть команды"
+            btnsNovisible.forEach((item)=>{
+                item.classList.remove('none');
+            })
+        }
+        else {
+                btn.innerText="Вся команда"
+                btnsNovisible.forEach((item)=>{
+                    item.classList.add('none');
+                })
+            }
+      
+    
+        // itemsTeamNoVisible.forEach((item)=> {
+        //      item.classList.toggle('none')
+        // })
+    })
+});
 $(document).ready(function () {
     $(".SliderR").slick({
         infinite: true,
