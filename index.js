@@ -40,8 +40,6 @@ $(document).ready(function(){
         //      item.classList.toggle('none')
         // })
     })
-});
-$(document).ready(function () {
     $(".SliderR").slick({
         infinite: true,
         speed: 300,
