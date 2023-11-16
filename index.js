@@ -69,11 +69,11 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
         autoplay: true,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: "10%",
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         responsive: [{
             breakpoint: 1024,
             settings: {
@@ -93,11 +93,11 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
         autoplay: true,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: "10%",
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         responsive: [{
             breakpoint: 1024,
             settings: {
