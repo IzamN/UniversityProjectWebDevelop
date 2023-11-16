@@ -17,7 +17,7 @@ $(document).ready(function(){
     $('.navigate__burger').click(function(event){
         $('.navigate__burger,.navigate__menu').toggleClass('active');
         $('body').toggleClass('lock');
-    });
+    })
     const btnsNovisible=document.querySelectorAll('.novisible');
     const btn=document.querySelector('.btn-team')
     btn.addEventListener('click', function(e){
@@ -40,6 +40,10 @@ $(document).ready(function(){
         //      item.classList.toggle('none')
         // })
     })
+
+})
+$(document).ready(function(){
+
     $(".SliderR").slick({
         infinite: true,
         speed: 300,
