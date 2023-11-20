@@ -1,7 +1,7 @@
 $(window).on('load', function(){
-    $('#header').vide('./video/video', {
-        bgColor: '#fff'
-    })
+    // $('#header').vide('./video/video', {
+    //     bgColor: '#fff'
+    // })
 
     const links= document.querySelectorAll('.navigation-list a');
     links.forEach(function(item){
