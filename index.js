@@ -126,3 +126,26 @@ $(document).ready(function(){
         }
     });
 });
+$(document).ready(function(){
+    
+    const btnsNovisible=document.querySelectorAll('.novisible');
+    const btn=document.querySelector('.btn-team')
+    btn.addEventListener('click', function(e){
+        e.preventDefault();
+        if (btn.innerText==='Вся команда') {
+            btn.innerText="Часть команды"
+            btnsNovisible.forEach((item)=>{
+                item.classList.remove('none');
+            })
+        }
+        else {
+                btn.innerText="Вся команда"
+                btnsNovisible.forEach((item)=>{
+                    item.classList.add('none');
+                })
+            }
+      
+    
+      
+    })
+});
