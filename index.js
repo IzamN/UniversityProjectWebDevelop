@@ -1,7 +1,6 @@
-$(window).on('load', function(){
-    // $('#header').vide('./video/video', {
-    //     bgColor: '#fff'
-    // })
+
+
+$(document).ready(function(){
 
     const links= document.querySelectorAll('.navigation-list a');
     links.forEach(function(item){
@@ -9,37 +8,51 @@ $(window).on('load', function(){
             links.forEach(function(item){item.classList.remove('active')})
             e.target.classList.add("active")
     })
-})
-})
+    })
 
-
-$(document).ready(function(){
     $('.navigate__burger').click(function(event){
         $('.navigate__burger,.navigate__menu').toggleClass('active');
         $('body').toggleClass('lock');
     })
-    const btnsNovisible=document.querySelectorAll('.novisible');
-    const btn=document.querySelector('.btn-team')
-    btn.addEventListener('click', function(e){
+    const teamNovisible=document.querySelector('.team').querySelectorAll('.novisible');
+    const btnTeam=document.querySelector('.btn-team')
+    btnTeam.addEventListener('click', function(e){
         e.preventDefault(); 
-        if (btn.innerText==='Вся команда') {
-            btn.innerText="Часть команды"
-            btnsNovisible.forEach((item)=>{
+        if (btnTeam.innerText==='Вся команда') {
+            btnTeam.innerText="Часть команды"
+            teamNovisible.forEach((item)=>{
                 item.classList.remove('none');
             })
         }
         else {
-                btn.innerText="Вся команда"
-                btnsNovisible.forEach((item)=>{
+            btnTeam.innerText="Вся команда"
+                teamNovisible.forEach((item)=>{
                     item.classList.add('none');
                 })
             }
-      
-    
-        // itemsTeamNoVisible.forEach((item)=> {
-        //      item.classList.toggle('none')
-        // })
     })
+
+
+    const casesNovisible=document.querySelector('.cases').querySelectorAll('.novisible');
+    const btnCases=document.querySelector('.btn-cases')
+    console.log(btnCases)
+    btnCases.addEventListener('click', function(e){
+
+        e.preventDefault(); 
+        if (btnCases.innerText==='Все кейсы') {
+            btnCases.innerText="Часть кейсов"
+            casesNovisible.forEach((item)=>{
+                item.classList.remove('none');
+            })
+        }
+        else {
+            btnCases.innerText="Все кейсы"
+            casesNovisible.forEach((item)=>{
+                    item.classList.add('none');
+                })
+            }
+    })
+
 
 })
 $(document).ready(function(){
